@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
+    <!-- 声明文档使用的字符编码 -->
     <meta charset="utf-8" />
+    <!-- 为移动设备添加 viewport -->
     <meta name="viewport" content="width=device-width,initial-scale-1" />
-    <title>Re01 HTML 第一个网页</title>
+    <title>Re01</title>
+    <link href="styles/style.css" rel="stylesheet" />
   </head>
   <body style="margin: 0">
     <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <img alt="路飞" src="luffy.png" width="90px" height="90px" />
+      <img alt="路飞" src="images/pic_20230813111848.jpg" class="logoimg" />
     </div>
     <div
       style="
-        max-width: 700px;
+        max-width: 600px;
         /* text-align: center; */
         margin: 30px auto;
         padding: 15px;
@@ -23,10 +26,11 @@
       <p>草帽海贼团船长是路飞</p>
       <p>航海士娜美</p>
       <p>厨师山治</p>
-      <a href="/re01.html">前往第二页</a>
+      <a href="./re01.html">下一页</a>
     </div>
     <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <p>版权所有：</p>
+      <p style="font-size: 12px; color: rgb(2, 2, 3)">版权所有：</p>
     </div>
+    <script src="scripts/main.js" defer></script>
   </body>
 </html>

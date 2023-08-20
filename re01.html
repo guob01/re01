@@ -4,43 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Flex 布局</title>
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        background-color: #eee;
-      }
-      .flex {
-        display: flex;
-      }
-      .baise {
-        background-color: white;
-      }
-      .flex1 {
-        flex: 1;
-      }
-      .column {
-        flex-direction: column;
-      }
-      .mg8 {
-        margin: 8px;
-      }
-      .mgr8 {
-        margin-right: 8px;
-      }
-      .mgt8 {
-        margin-top: 8px;
-      }
-    </style>
   </head>
   <body class="flex">
     <!-- 侧边栏 -->
-    <div style="width: 200px" class="baise"></div>
+    <div style="width: 150px" class="flex baise"></div>
     <!-- 主区域 -->
     <div class="flex1 flex column">
       <!--头部栏-->
-      <div style="height: 60px" class="baise"></div>
+      <div style="height: 60px" class="baise">
+        <form class="example" action="/" style="margin: auto; max-width: 300px">
+          <input type="text" placeholder="搜索.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
       <!--内容区-->
       <div class="flex1 flex">
         <!--左区-->
@@ -56,7 +38,19 @@
           <!--列表区-->
           <div class="flex column">
             <!--列表项-->
-            <div style="height: 160px" class="baise mgt8"></div>
+            <div style="height: 160px" class="baise mgt8">
+              <button id="dzs" onclick="dianZan()">0</button>
+              <script>
+                function dianZan() {
+                  let dianZanShuBiaoQian =
+                    window.document.getElementById("dzs");
+                  let dianZanShu = parseInt(dianZanShuBiaoQian.innerText);
+                  let xinShuZi = dianZanShu + 1;
+                  dianZanShuBiaoQian.innerText = xinShuZi;
+                  return;
+                }
+              </script>
+            </div>
             <div style="height: 160px" class="baise mgt8"></div>
             <div style="height: 160px" class="baise mgt8"></div>
           </div>

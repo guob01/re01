@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #eee;
+}
+.logoimg {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+}
+.flex {
+  display: flex;
+}
+.baise {
+  background-color: white;
+}
+.flex1 {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.mg8 {
+  margin: 8px;
+}
+.mgr8 {
+  margin-right: 8px;
+}
+.mgt8 {
+  margin-top: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 设置搜索框 */
+form.example input[type="text"] {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* 设置提交按钮 */
+form.example button {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 15%;
+  background: #2196f3;
+  color: white;
+  border-left: none; /* 防止双边框 */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* 清除浮动 */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
